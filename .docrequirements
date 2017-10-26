@@ -1,2 +1,4 @@
-sphinx_bootstrap_theme
 numpy
+numpydoc
+sphinx_bootstrap_theme
+sphinx>=1.6
