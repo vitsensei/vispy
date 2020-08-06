@@ -180,6 +180,14 @@ class ViewBox(Widget):
             The node to add.
         """
         node.parent = self.scene
+        
+    def remove(self, node):
+        """
+        Delete a node to this ViewBox. This is a convenience method.
+        Maybe have a list of all added node and let the user self.clear() the viewbox?
+        """       
+        node.parent = None
+        del node
 
     def on_resize(self, event):
         """Resize event handler
